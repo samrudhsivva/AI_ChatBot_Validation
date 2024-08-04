@@ -60,10 +60,6 @@ This project demonstrates a chatbot validation mechanism by comparing responses 
 - **Extended Validation**: More complex validation logic based on the context and length of responses.
 - **Detailed Reporting**: Generate reports for failed scenarios to analyze model performance.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [OpenAI](https://www.openai.com) for providing the powerful language models.
