@@ -1,71 +1,71 @@
-# Getting Started with Create React App
+# OpenAI Chatbot Validation Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project demonstrates a chatbot validation mechanism by comparing responses from two different OpenAI models. The primary goal is to identify failed scenarios where the responses from the two models do not match. The application sends the same query to both models, expects a single-word response, and compares these responses to validate their consistency.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Input and Response Handling**: Users can input a query, and the application sends this query to two different OpenAI models.
+- **Single-word Responses**: The application instructs the models to respond with a single word.
+- **Comparison and Validation**: The responses from both models are compared. If the responses are identical, the validation is marked as `true`. If they differ, the validation is `false`.
+- **Error Handling**: The application handles errors gracefully, displaying appropriate messages if the API calls fail.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Advantages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Error Identification**: By comparing the responses from two models, this application helps identify inconsistencies and failed scenarios, which is crucial for improving the reliability of AI models.
+2. **Model Comparison**: It provides a straightforward way to compare the performance of different OpenAI models on the same input.
+3. **Real-time Validation**: The application performs real-time validation of model responses, which is useful for applications requiring high reliability.
+4. **User-friendly Interface**: With a simple and clean UI, users can easily input queries and view the results and validation status.
 
-### `npm test`
+## How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **User Input**: The user types a query into the input box and submits it.
+2. **API Requests**: The application sends the query to two different OpenAI models (e.g., `gpt-4o-mini` and `text-davinci-003`), requesting a single-word response.
+3. **Response Handling**: The responses from both models are stored in variables.
+4. **Validation Check**: The application compares the responses. If they match, it sets the validation status to `true`. If they do not match, it sets the validation status to `false`.
+5. **Display Results**: The responses and validation status are displayed on the screen.
 
-### `npm run build`
+## Setup and Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/openai-chatbot-validation.git
+    cd openai-chatbot-validation
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Add Your OpenAI API Key**:
+   - Replace `YOUR_API_KEY` in `Chat.js` with your actual OpenAI API key.
 
-### `npm run eject`
+4. **Run the Application**:
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Enter your query into the input box and click the "Send" button.
+3. View the responses from both models and the validation status.
+4. Click the "Compare" button to manually trigger the comparison of responses if needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Enhancements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Additional Models**: Support for more models to broaden comparison.
+- **Extended Validation**: More complex validation logic based on the context and length of responses.
+- **Detailed Reporting**: Generate reports for failed scenarios to analyze model performance.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
 
-### Code Splitting
+- [OpenAI](https://www.openai.com) for providing the powerful language models.
+- The React and Axios communities for their excellent libraries.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# AI_ChatBot_Validation
